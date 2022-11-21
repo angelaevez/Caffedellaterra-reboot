@@ -1,0 +1,186 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Lato;
+}
+
+.logo {
+  width: 90%;
+}
+
+.text-lrg {
+  font-size:18px;
+}
+
+/*Nav items*/
+.nav-item {
+   font-size: 18px;
+   font-weight:bold;
+}
+
+.nav-link {
+  color: #331606;
+}
+
+.nav-link:hover {
+  color: #0aa24f;
+}
+/*End to Nav*/
+
+/*Landing Area*/
+.bg-img-header {
+  background-image: url("images/cdt-homepage-landing-area.jpg");
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*CTA*/
+.bg-img {
+  background-image: url("images/cdt-call-to-action.jpg");
+  padding: 5%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.light-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.light-hd {
+  color: #ffffff;
+  text-shadow: 1px 2px 3px #000000;
+}
+/*End to CTA*/
+
+
+/*Row padding*/
+.row-pd {
+  padding: 3% 0%;
+}
+
+/*Buttons*/
+.btn--green {
+  background-color: #0FEF74;
+  transition: scale 2s linear;
+}
+
+.btn--green:hover {
+  scale: 1.02;
+}
+
+p .btn--green {
+  color:#331606;
+  font-size: 22px;
+}
+
+p .btn--green:hover {
+  color:#331606;
+}
+
+/*Box shadow*/
+.box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #fbfefb 0%, #d0b8ac 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
+
+/*Form*/
+label {
+  color:#ffffff;
+}
+
+/*Animations*/
+.fade-in-text {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.reveal{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes slide {
+  from{transform: translateY(20%);}
+  to{transform: translateY(0px);}
+  }
+  
+  .slide-up {
+  animation: slide .75s linear 1;
+  }
+
+
