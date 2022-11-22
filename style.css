@@ -12,11 +12,11 @@ html {
   width: 90%;
 }
 
-.font--md {
+.font-md {
   font-size:18px;
 }
 
-.font--lrg {
+.font-lg {
   font-size: 1.5rem
 }
 
@@ -58,13 +58,13 @@ html {
   background-size: cover;
 }
 
-.light--bg {
+.light-bg {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1%;
   border-radius: 5px;
 }
 
-.light--hd {
+.light-hd {
   color: #ffffff;
   text-shadow: 1px 2px 3px #000000;
 }
@@ -72,7 +72,7 @@ html {
 
 
 /*Row padding*/
-.row--pd {
+.row-pd {
   padding: 3% 0%;
 }
 
