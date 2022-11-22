@@ -12,8 +12,12 @@ html {
   width: 90%;
 }
 
-.text-lrg {
+.font--md {
   font-size:18px;
+}
+
+.font--lrg {
+  font-size: 1.5rem
 }
 
 /*Nav items*/
@@ -34,6 +38,7 @@ html {
 /*Landing Area*/
 .bg-img-header {
   background-image: url("images/cdt-homepage-landing-area.jpg");
+  background-color:#000000;
   padding-top: 20%;
   padding-bottom: 20%;
   background-attachment: fixed;
@@ -43,8 +48,9 @@ html {
 }
 
 /*CTA*/
-.bg-img {
+.bg--img {
   background-image: url("images/cdt-call-to-action.jpg");
+  background-color:#000000;
   padding: 5%;
   background-attachment: fixed;
   background-position: center;
@@ -52,13 +58,13 @@ html {
   background-size: cover;
 }
 
-.light-bg {
+.light--bg {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1%;
   border-radius: 5px;
 }
 
-.light-hd {
+.light--hd {
   color: #ffffff;
   text-shadow: 1px 2px 3px #000000;
 }
@@ -66,7 +72,7 @@ html {
 
 
 /*Row padding*/
-.row-pd {
+.row--pd {
   padding: 3% 0%;
 }
 
